@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="tela-login.css"/>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+        <div class="cabecalho">
+
+          <a class="navbar-brand"  href="index.html"> <h2 id="navbar-marca"> <i> ModaGreen </i> </h2>  <img
+            src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t5-g1-comercio-eletronico/main/src/Logo3.png" alt="Moda Green" width="16" height="16"/></a>
+            </section>
+  
+          <div id="pesquisa">
+            <form name="pesquisa" action="pesquisa.html" method="post">
+              <input type="text" id="txtBusca" name="pesquisa" placeholder="Pesquise por produtos e lojas"/>
+              <button>
+                <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t5-g1-comercio-eletronico/main/src/loupe.png"
+                  alt="Lupa"/>
+              </button>
+            </form>
+          </div>
+          
+          <section id="icones">
+              <div id="carrinho" class="cart">
+                <a href="finalizacao-compra.html" target="_self">  <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t5-g1-comercio-eletronico/main/src/Carrinho.png" alt="carrinho de compras"width="24" height="24" > <span>0</span> </a>
+              </div>
+              <div id="favoritos">
+                  <a href="tela-login.html" target="_self"><img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t5-g1-comercio-eletronico/main/src/love.png" alt="favoritos" width="24" height="24"/></a> 
+              </div>      
+            
+              <div id="entrar">
+                <a href="tela-login.html" target="_self"> <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t5-g1-comercio-eletronico/main/src/login.png" alt="entrar" width="24" height="24"/> </a>
+              </div>
+          </section>
+
+  </header>
+  
+<!-- Login para clientes cadastrados -->
+        <div class="container">
+          <div class="content first-content">
+              <div class="first-column">
+                  <h2 class="title title-primary">Já sou Cliente Green!</h2>
+                  <p class="description description-primary">Para se manter conectado com a gente</p>
+                  <p class="description description-primary">por favor faça o login com suas informações pessoais</p>                                                     
+                  <button id="acessar" class="btn btn-primary">Acessar</button>
+                  <br><br>
+              </div>              
+              <!-- Criação de conta para cliente novo -->    
+              <div class="second-column">
+                  <h2 class="title title-second">Criar Conta</h2>
+                    <div id="msgError"></div></br>
+                    <div id="msgSucess"></div></br>
+                    
+                  <form class="form">
+                      <label class="label-input" for="" id="labelNome">
+                          <input type="text" id="inputNome" placeholder="Nome" required>
+                      </label>
+                      
+                      <label class="label-input" for="" id="labelEmail">
+                          <input type="email" id="inputEmail" placeholder="E-mail" required>
+                      </label>
+                      
+                      <label class="label-input" for="" id="labelSenha">
+                          <input type="password" id="inputSenha" placeholder="Senha" required>
+                      </label>
+                      
+                      <label class="label-input" for="" id="labelConfirmSenha">
+                        <input type="password" id="inputConfirmSenha" placeholder="Confirmar Senha" required>
+                    </label>
+                      
+                      <button class="btn btn-second" id="botaocad">Cadastre-se</button>
+                     
+                  </form>
+              </div><!-- second column -->
+          </div><!-- first content -->
+          <div class="content second-content">
+              <div class="first-column">
+                  <h2 class="title title-primary">Olá!</h2>
+                  <p class="description description-primary">Insira seus dados pessoais</p>
+                  <p class="description description-primary">e conheça nossa loja virtual</p>
+                  <button id="prosseguir" class="btn btn-primary">Prosseguir</button>
+              </div>
+              <div class="second-column">
+                  <h2 class="title title-second">Já sou cliente Green</h2>
+                    <div id="msgErrorLogin"></div></br></br>
+                  <form class="form">
+                  
+                      <label class="label-input" for="" id= "labelEmailLogin">
+                          <i class="far fa-envelope icon-modify"></i>
+                          <input type="email" id= "inputEmailLogin" placeholder="E-mail" required>
+                      </label>
+                  
+                      <label class="label-input" for="" id= "labelSenhaLogin">
+                          <i class="fas fa-lock icon-modify"></i>
+                          <input type="password" id= "inputSenhaLogin" placeholder="Senha" required>
+                      </label>
+
+                      <a class="password" href="#">Esqueceu sua senha?</a>
+                      <button class="btn btn-second" id="botaoentrar">entrar</button>
+                  </form>
+              </div><!-- second column -->
+          </div><!-- second-content -->
+        </div>
+      
+      <script src="script.js"></script>
+      <script src="produtos"> </script>
+      <script src="main.js"></script>
+  </body>
+  </html>
+
